@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML5 content and form assignment showcasing lists, tables, media, and native form validation.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Content & Form Mastery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header, footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #eaeaea;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 15px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #0078D4;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content & Form Mastery</h1>
+    <p>Explore lists, tables, media, and a fully accessible form.</p>
+  </header>
+
+  <main>
+
+    <!-- Section: Lists -->
+    <section>
+      <h2>Top 5 Web Development Skills</h2>
+      <ol>
+        <li>Semantic HTML</li>
+        <li>CSS Layout Techniques</li>
+        <li>JavaScript Fundamentals</li>
+        <li>Accessibility Best Practices</li>
+        <li>SEO Optimization</li>
+      </ol>
+    </section>
+
+    <!-- Section: Table -->
+    <section>
+      <h2>Weekly Learning Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML5 Basics</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Forms & Validation</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Tables & Lists</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section: Media -->
+    <section>
+      <h2>Learning Resources</h2>
+
+      <figure>
+        <img src="html5-logo.png" alt="HTML5 Logo" width="150">
+        <figcaption>HTML5 Logo</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="lesson-intro.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <video width="320" height="240" controls>
+        <source src="form-tutorial.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Section: Form -->
+    <section>
+      <h2>Contact Form</h2>
+      <form action="/submit" method="post" aria-labelledby="formTitle">
+        <fieldset>
+          <legend id="formTitle">Get in Touch</legend>
+
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" required minlength="3" autocomplete="name">
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email">
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="08012345678" pattern="[0-9]{11}" required>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="ng">Nigeria</option>
+            <option value="gh">Ghana</option>
+            <option value="ke">Kenya</option>
+          </select>
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+          <label>
+            <input type="checkbox" name="subscribe" checked readonly>
+            Subscribe to updates (required)
+          </label>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Learning Hub</p>
+  </footer>
+
+</body>
+</html>
